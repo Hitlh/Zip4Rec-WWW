@@ -1,0 +1,28 @@
+{
+  "initial_layout": "optical_compression/layouts/initial.py",
+  "agent": {
+    "model": "gpt-4o",
+    "base_url_env": "OPENAI_BASE_URL",
+    "api_key_env": "OPENAI_API_KEY",
+    "timeout": 180,
+    "max_completion_tokens": 8192
+  },
+  "constraints": {
+    "font_size": 14,
+    "heading_size": 15,
+    "title_size": 18,
+    "min_width": 256,
+    "max_width": 1536,
+    "max_height": 16384,
+    "max_pixels": 8000000
+  },
+  "reader": {
+    "enabled": true,
+    "device": "cuda:0",
+    "max_new_tokens": 4096
+  },
+  "max_candidates": 20,
+  "max_turns": 40,
+  "max_length": 2048,
+  "readability_threshold": 0.90
+}

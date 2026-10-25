@@ -1,0 +1,8 @@
+{
+  "strategy_id": "cd_compact",
+  "status": "selected",
+  "source": "compact.py",
+  "entrypoint": "render_compact",
+  "purpose": "Selected CD DensePage layout for subsequent batch rendering",
+  "description": "Call compact.py directly after layout selection."
+}

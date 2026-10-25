@@ -1,0 +1,8 @@
+# Reference training runtime: Python 3.10.20, CUDA 12.4.
+# Install the matching CUDA PyTorch wheel first; see README.
+torch==2.5.1
+transformers==5.8.0
+peft==0.19.1
+accelerate==1.13.0
+Pillow>=10
+httpx>=0.27,<1

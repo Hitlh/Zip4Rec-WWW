@@ -1,0 +1,21 @@
+{
+  "reviews": "data/raw/CDs_and_Vinyl.jsonl.gz",
+  "metadata": "data/raw/meta_CDs_and_Vinyl.jsonl.gz",
+  "base_model": "data/models/Qwen3-VL-8B-Instruct",
+  "output": "artifacts/zip4rec_cd_agent",
+  "asset_model": "gpt-4o",
+  "asset_workers": 1,
+  "filtering": {
+    "user_k": 10,
+    "item_k": 15
+  },
+  "retrieval": {
+    "device": "cuda",
+    "epochs": 35,
+    "validation_users": 1000,
+    "test_users": 1000
+  },
+  "grpo_config": "configs/cd_lightgcn/grpo.json",
+  "sft_learning_rate": 1e-05,
+  "layout_optimizer_config": "configs/cd_lightgcn/layout_optimizer.json"
+}
